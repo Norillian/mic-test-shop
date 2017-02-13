@@ -1,0 +1,17 @@
+// _base.scss
+
+$font-stack: 'Lato', serif;
+$primary-color: #333;
+
+body {
+  font-family: $font-stack;
+  font-size: 14px;
+  color: $primary-color;
+}
+
+.main-container .topbanner {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: $primary-color;
+}
