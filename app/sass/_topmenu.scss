@@ -1,0 +1,37 @@
+// _topmenu.scss
+
+$topmenu-links-color: #fff;
+$topmenu-height: 40px;
+
+.top-menu {
+  background-color: $default-color;
+  color: $topmenu-links-color;
+  min-height: $topmenu-height;
+  text-align: left;
+
+  a,
+  .esebdy {
+    color: $topmenu-links-color;
+    line-height: $topmenu-height;
+  }
+
+  .shopMenu {
+    width: 100%;
+
+    li {
+      display: inline-block;
+    }
+
+    li:after {
+      content: "-";
+      color: $topmenu-links-color;
+      padding: 0 10px;
+    }
+
+    li:last-child:after {
+      content: "";
+    }
+
+  }
+
+}

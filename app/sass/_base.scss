@@ -1,17 +1,30 @@
 // _base.scss
 
-$font-stack: 'Lato', serif;
-$primary-color: #333;
+// defaults
+$default-font: 'Lato', serif;
+$default-color: #333;
+$default-size: 14px;
+$default-padding: 0px 10px;
 
-body {
-  font-family: $font-stack;
-  font-size: 14px;
-  color: $primary-color;
+* {
+  font-family: $default-font;
+  font-size: $default-size;
+  color: $default-color;
+  text-align: left;
 }
 
-.main-container .topbanner {
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: $primary-color;
+body {
+  text-align: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.top-banner,
+.top-menu,
+.main-content {
+  padding: $default-padding;
 }
